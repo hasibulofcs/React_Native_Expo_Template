@@ -1,10 +1,10 @@
 {
   "expo": {
     "scheme": "acme",
-    "plugins": [
-      "expo-router"
-    ],
+    "plugins": ["expo-router"],
     "name": "react_native_expo_template",
-    "slug": "react_native_expo_template"
+    "slug": "react_native_expo_template",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true
   }
 }

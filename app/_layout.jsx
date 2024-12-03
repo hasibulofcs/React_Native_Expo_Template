@@ -1,6 +1,7 @@
-import { View, Text } from "react-native";
-import React, { Fragment } from "react";
-import { Stack } from "expo-router";
+import React, { useEffect } from "react";
+import { SplashScreen, Stack } from "expo-router";
+import { useFonts } from "expo-font";
+import "./../styles/global.css";
 
 const RootLayout = () => {
   // FONT
@@ -22,10 +23,10 @@ const RootLayout = () => {
   }
 
   return (
-    <Fragment>
-      <Stack.Screen name="Home" options={{ headerShown: false }} />
+    <Stack>
+      <Stack.Screen name="index" options={{ headerShown: false }} />
       <Stack.Screen name="profile" options={{ headerShown: false }} />
-    </Fragment>
+    </Stack>
   );
 };
 
