@@ -3,6 +3,7 @@ import React from "react";
 import { useRouter } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
+import TestElement from "@/components/TestElement";
 
 const HomeScreen = () => {
   const router = useRouter();
@@ -16,6 +17,8 @@ const HomeScreen = () => {
         >
           <Text>Profile</Text>
         </TouchableOpacity>
+
+        <TestElement />
       </SafeAreaView>
       <StatusBar style="light" backgroundColor="#000" />
     </View>
